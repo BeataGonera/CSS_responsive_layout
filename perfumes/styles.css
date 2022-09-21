@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 14px;
+}
+
+.wrapper{
+    display: flex;
+    
+}
+
+.picture{
+    background-image: url(./image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50vw;
+    height: 100vh;
+}
+
+.white-part{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.perfume{
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+    margin-bottom: 0px;
+}
+
+.title{
+    font-size: 6rem;
+    font-family: 'fraunces', serif;
+}
+
+.description{
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    line-height: 3.5rem;
+}
+
+.prices{
+    display: flex;
+    align-items: center;
+    column-gap: 3rem;
+}
+
+.current-price{
+    font-size: 6rem;
+    font-family: 'fraunces', serif;
+    color: hsl(158, 36%, 37%);
+}
+
+.old-price{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    height: 100px;
+    border-radius: 12px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-text{
+    font-size: 2rem;
+    position: absolute;
+}
+
+.button-icon img{
+    height: 2rem;
+    position: relative;
+    right: 9rem;
+}
+
+@media screen and (max-width: 375px){
+
+    
+    *{
+        font-size: 6px;
+    }
+    
+    .wrapper{
+        flex-direction: column;
+    }
+
+    .white-part{
+        height: 60vh;
+        width: 100vw;
+        padding: 8vw;
+        justify-content: space-between;
+    }
+
+    .picture{
+        width: 100vw;
+        height: 40vh;
+        background-image: url(./image-product-mobile.jpg);
+         }
+    
+    button{
+        height: 60px;
+    }
+}
+
+
